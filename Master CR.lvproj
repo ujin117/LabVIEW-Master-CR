@@ -28,6 +28,7 @@
 				<Item Name="TEST Data Model.lvclass" Type="LVClass" URL="../Data Model/ICPCON ET7000 Data Model/TEST/TEST Data Model.lvclass"/>
 			</Item>
 			<Item Name="ICPCON ET Data Model.lvclass" Type="LVClass" URL="../Data Model/ICPCON ET7000 Data Model/ICPCON ET Data Model.lvclass"/>
+			<Item Name="ICPCON PM3114 Data Model.lvclass" Type="LVClass" URL="../Data Model/ICPCON PM3114 Data Model/ICPCON PM3114 Data Model.lvclass"/>
 			<Item Name="ELAN Data Model.lvclass" Type="LVClass" URL="../Data Model/ELAN Data Model/ELAN Data Model.lvclass"/>
 		</Item>
 		<Item Name="Data Unit (PDU)" Type="Folder">
@@ -46,6 +47,7 @@
 					<Item Name="ICPCON ET-7028.lvclass" Type="LVClass" URL="../Devices/ET7000/ICPCON ET-7028/ICPCON ET-7028.lvclass"/>
 					<Item Name="ICPCON ET-7042.lvclass" Type="LVClass" URL="../Devices/ET7000/ICPCON ET-7042/ICPCON ET-7042.lvclass"/>
 					<Item Name="ICPCON ET-7051.lvclass" Type="LVClass" URL="../Devices/ET7000/ICPCON ET-7051/ICPCON ET-7051.lvclass"/>
+					<Item Name="ICPCON PM-3112.lvclass" Type="LVClass" URL="../Devices/ET7000/ICPCON PM-3112/ICPCON PM-3112.lvclass"/>
 					<Item Name="TEST.lvclass" Type="LVClass" URL="../Devices/ET7000/TEST/TEST.lvclass"/>
 					<Item Name="TEST1.lvclass" Type="LVClass" URL="../Devices/ET7000/TEST1/TEST1.lvclass"/>
 				</Item>

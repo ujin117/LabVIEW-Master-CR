@@ -166,6 +166,8 @@ DirectoryIndex index.htm
 			<Item Name="M-7024 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/M-7024/M-7024 Data Model.lvclass"/>
 			<Item Name="TEST Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/TEST/TEST Data Model.lvclass"/>
 			<Item Name="ET-7016i Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7016i/ET-7016i Data Model.lvclass"/>
+			<Item Name="ICPCON PM-3112.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON PM-3112/ICPCON PM-3112.lvclass"/>
+			<Item Name="ICPCON PM3114 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON PM3114 Data Model/ICPCON PM3114 Data Model.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
