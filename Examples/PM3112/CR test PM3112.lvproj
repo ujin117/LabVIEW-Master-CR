@@ -103,72 +103,7 @@ DirectoryIndex index.htm
 		<Property Name="server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Param_MB test.lvlib" Type="Library" URL="../enums/Param_MB test.lvlib"/>
-		<Item Name="CR test.vi" Type="VI" URL="../CR test.vi"/>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="vi.lib" Type="Folder">
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
-				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
-				<Item Name="VISA Flush IO Buffer Mask.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Flush IO Buffer Mask.ctl"/>
-			</Item>
-			<Item Name="Master CR.lvclass" Type="LVClass" URL="../../../Master CR.lvclass"/>
-			<Item Name="Param.lvlib" Type="Library" URL="../../../Param/Param.lvlib"/>
-			<Item Name="Network Protocol.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Protocol.lvclass"/>
-			<Item Name="Device Data Model.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Data Model/Device Data Model.lvclass"/>
-			<Item Name="Modbus Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Modbus Data Unit/Modbus Data Unit.lvclass"/>
-			<Item Name="TCP.lvclass" Type="LVClass" URL="../../../Devices/ET7000/TCP/TCP.lvclass"/>
-			<Item Name="Transmission Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/Transmission Data Unit.lvclass"/>
-			<Item Name="Master Function Definition.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Master Function Definition/Master Function Definition.lvclass"/>
-			<Item Name="Network Master.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Master/Network Master.lvclass"/>
-			<Item Name="TCP Master.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Master/TCP/TCP Master.lvclass"/>
-			<Item Name="Bits to Bytes.vi" Type="VI" URL="../../../../Modbus_v121c/Utility/Bits to Bytes.vi"/>
-			<Item Name="U16s to Bytes.vi" Type="VI" URL="../../../../Modbus_v121c/Utility/U16s to Bytes.vi"/>
-			<Item Name="Bytes to Bits.vi" Type="VI" URL="../../../../Modbus_v121c/Utility/Bytes to Bits.vi"/>
-			<Item Name="Bytes to U16s.vi" Type="VI" URL="../../../../Modbus_v121c/Utility/Bytes to U16s.vi"/>
-			<Item Name="Serial Master.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Master/Serial/Serial Master.lvclass"/>
-			<Item Name="IP Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/IP/IP Data Unit.lvclass"/>
-			<Item Name="TCP Shared Components.lvlib" Type="Library" URL="../../../../Modbus_v121c/Network Interface/TCP Interface/TCP Shared Components/TCP Shared Components.lvlib"/>
-			<Item Name="ICPCON ET-7016i.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7016i/ICPCON ET-7016i.lvclass"/>
-			<Item Name="TEST.lvclass" Type="LVClass" URL="../../../Devices/ET7000/TEST/TEST.lvclass"/>
-			<Item Name="TEST1.lvclass" Type="LVClass" URL="../../../Devices/ET7000/TEST1/TEST1.lvclass"/>
-			<Item Name="ELAN Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ELAN Data Model/ELAN Data Model.lvclass"/>
-			<Item Name="ELAN PDU.lvclass" Type="LVClass" URL="../../../Data Unit/ELAN PC Data Unit/ELAN PDU.lvclass"/>
-			<Item Name="ELAN.lvclass" Type="LVClass" URL="../../../Devices/Serial/ELAN/ELAN.lvclass"/>
-			<Item Name="Serial.lvclass" Type="LVClass" URL="../../../Devices/Serial/Serial.lvclass"/>
-			<Item Name="ELAN Data Unit.lvclass" Type="LVClass" URL="../../../Transmission Data Unit/ELAN/ELAN Data Unit.lvclass"/>
-			<Item Name="Serial Shared Components.lvlib" Type="Library" URL="../../../../Modbus_v121c/Network Interface/Serial Interface/Serial Shared Components/Serial Shared Components.lvlib"/>
-			<Item Name="ELAN Master.lvclass" Type="LVClass" URL="../../../Network Protocol/ELAN Master/ELAN Master.lvclass"/>
-			<Item Name="ICPCON M-7024.lvclass" Type="LVClass" URL="../../../Devices/M7000/ICPCON M-7024/ICPCON M-7024.lvclass"/>
-			<Item Name="RTU Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/RTU/RTU Data Unit.lvclass"/>
-			<Item Name="Serial Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/Serial Interface/Serial Data Unit.lvclass"/>
-			<Item Name="ASCII Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/ASCII/ASCII Data Unit.lvclass"/>
-			<Item Name="ICPCON ET-7051.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7051/ICPCON ET-7051.lvclass"/>
-			<Item Name="ET-7051 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7051/ET-7051 Data Model.lvclass"/>
-			<Item Name="ICPCON ET Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ICPCON ET Data Model.lvclass"/>
-			<Item Name="ICPCON ET-7042.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7042/ICPCON ET-7042.lvclass"/>
-			<Item Name="ET-7042 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7042/ET-7042 Data Model.lvclass"/>
-			<Item Name="ICPCON ET-7028.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7028/ICPCON ET-7028.lvclass"/>
-			<Item Name="ET-7028 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7028/ET-7028 Data Model.lvclass"/>
-			<Item Name="ICPCON ET-7024.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7024/ICPCON ET-7024.lvclass"/>
-			<Item Name="ET-7024 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7024/ET-7024 Data Model.lvclass"/>
-			<Item Name="ICPCON ET-7018.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7018/ICPCON ET-7018.lvclass"/>
-			<Item Name="ET-7018 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7018/ET-7018 Data Model.lvclass"/>
-			<Item Name="ICPCON ET-7018i.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7018i/ICPCON ET-7018i.lvclass"/>
-			<Item Name="ET-7018i Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7018i/ET-7018i Data Model.lvclass"/>
-			<Item Name="ICPCON ET-7017-10.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7017-10/ICPCON ET-7017-10.lvclass"/>
-			<Item Name="ET-7017-10 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7017-10/ET-7017-10 Data Model.lvclass"/>
-			<Item Name="SMSD-DI.lvclass" Type="LVClass" URL="../../../Devices/SMSD/SMSD-DI/SMSD-DI.lvclass"/>
-			<Item Name="SMSD Data Unit.lvclass" Type="LVClass" URL="../../../Data Unit/SMSD Data Unit/SMSD Data Unit.lvclass"/>
-			<Item Name="SMSD Master.lvclass" Type="LVClass" URL="../../../Network Protocol/SMSD Master/SMSD Master.lvclass"/>
-			<Item Name="SMSD ADU.lvclass" Type="LVClass" URL="../../../Transmission Data Unit/SMSD/SMSD ADU.lvclass"/>
-			<Item Name="SMSD.lvclass" Type="LVClass" URL="../../../Devices/SMSD/SMSD.lvclass"/>
-			<Item Name="SMSD-AI.lvclass" Type="LVClass" URL="../../../Devices/SMSD/SMSD-AI/SMSD-AI.lvclass"/>
-			<Item Name="M-7024 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/M-7024/M-7024 Data Model.lvclass"/>
-			<Item Name="TEST Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/TEST/TEST Data Model.lvclass"/>
-			<Item Name="ET-7016i Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7016i/ET-7016i Data Model.lvclass"/>
-			<Item Name="ICPCON PM-3112.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON PM-3112/ICPCON PM-3112.lvclass"/>
-			<Item Name="ICPCON PM3114 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON PM3114 Data Model/ICPCON PM3114 Data Model.lvclass"/>
-		</Item>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="RT Target" Type="RT CompactRIO">
@@ -222,7 +157,7 @@ DirectoryIndex index.htm
 		<Property Name="target.server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="target.WebServer.Config" Type="Str"># Web server configuration file.
 # Generated by LabVIEW 21.0
-# 23.08.2022 20:37:36
+# 20.01.2023 12:06:35
 
 #
 # Global Directives
@@ -258,7 +193,75 @@ DirectoryIndex index.htm
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="CR test.vi" Type="VI" URL="../CR test.vi"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="VISA Flush IO Buffer Mask.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Flush IO Buffer Mask.ctl"/>
+				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
+			</Item>
+			<Item Name="ELAN Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ELAN Data Model/ELAN Data Model.lvclass"/>
+			<Item Name="ELAN PDU.lvclass" Type="LVClass" URL="../../../Data Unit/ELAN PC Data Unit/ELAN PDU.lvclass"/>
+			<Item Name="Device Data Model.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Data Model/Device Data Model.lvclass"/>
+			<Item Name="Modbus Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Modbus Data Unit/Modbus Data Unit.lvclass"/>
+			<Item Name="Param_MB test.lvlib" Type="Library" URL="../enums/Param_MB test.lvlib"/>
+			<Item Name="Master CR.lvclass" Type="LVClass" URL="../../../Master CR.lvclass"/>
+			<Item Name="Param.lvlib" Type="Library" URL="../../../Param/Param.lvlib"/>
+			<Item Name="Network Protocol.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Protocol.lvclass"/>
+			<Item Name="ICPCON ET-7016i.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7016i/ICPCON ET-7016i.lvclass"/>
+			<Item Name="ET-7016i Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7016i/ET-7016i Data Model.lvclass"/>
+			<Item Name="ICPCON ET Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ICPCON ET Data Model.lvclass"/>
+			<Item Name="TCP.lvclass" Type="LVClass" URL="../../../Devices/ET7000/TCP/TCP.lvclass"/>
+			<Item Name="IP Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/IP/IP Data Unit.lvclass"/>
+			<Item Name="Transmission Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/Transmission Data Unit.lvclass"/>
+			<Item Name="TCP Shared Components.lvlib" Type="Library" URL="../../../../Modbus_v121c/Network Interface/TCP Interface/TCP Shared Components/TCP Shared Components.lvlib"/>
+			<Item Name="Network Master.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Master/Network Master.lvclass"/>
+			<Item Name="Master Function Definition.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Master Function Definition/Master Function Definition.lvclass"/>
+			<Item Name="Bits to Bytes.vi" Type="VI" URL="../../../../Modbus_v121c/Utility/Bits to Bytes.vi"/>
+			<Item Name="U16s to Bytes.vi" Type="VI" URL="../../../../Modbus_v121c/Utility/U16s to Bytes.vi"/>
+			<Item Name="Bytes to Bits.vi" Type="VI" URL="../../../../Modbus_v121c/Utility/Bytes to Bits.vi"/>
+			<Item Name="Bytes to U16s.vi" Type="VI" URL="../../../../Modbus_v121c/Utility/Bytes to U16s.vi"/>
+			<Item Name="Serial Master.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Master/Serial/Serial Master.lvclass"/>
+			<Item Name="TCP Master.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Master/TCP/TCP Master.lvclass"/>
+			<Item Name="TEST.lvclass" Type="LVClass" URL="../../../Devices/ET7000/TEST/TEST.lvclass"/>
+			<Item Name="TEST Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/TEST/TEST Data Model.lvclass"/>
+			<Item Name="TEST1.lvclass" Type="LVClass" URL="../../../Devices/ET7000/TEST1/TEST1.lvclass"/>
+			<Item Name="ELAN.lvclass" Type="LVClass" URL="../../../Devices/Serial/ELAN/ELAN.lvclass"/>
+			<Item Name="Serial.lvclass" Type="LVClass" URL="../../../Devices/Serial/Serial.lvclass"/>
+			<Item Name="ELAN Data Unit.lvclass" Type="LVClass" URL="../../../Transmission Data Unit/ELAN/ELAN Data Unit.lvclass"/>
+			<Item Name="Serial Shared Components.lvlib" Type="Library" URL="../../../../Modbus_v121c/Network Interface/Serial Interface/Serial Shared Components/Serial Shared Components.lvlib"/>
+			<Item Name="ELAN Master.lvclass" Type="LVClass" URL="../../../Network Protocol/ELAN Master/ELAN Master.lvclass"/>
+			<Item Name="ICPCON M-7024.lvclass" Type="LVClass" URL="../../../Devices/M7000/ICPCON M-7024/ICPCON M-7024.lvclass"/>
+			<Item Name="M-7024 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/M-7024/M-7024 Data Model.lvclass"/>
+			<Item Name="Modbus Serial.lvclass" Type="LVClass" URL="../../../Devices/Serial/Modbus Serial/Modbus Serial.lvclass"/>
+			<Item Name="RTU Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/RTU/RTU Data Unit.lvclass"/>
+			<Item Name="Serial Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/Serial Interface/Serial Data Unit.lvclass"/>
+			<Item Name="ASCII Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/ASCII/ASCII Data Unit.lvclass"/>
+			<Item Name="SMSD-AI.lvclass" Type="LVClass" URL="../../../Devices/SMSD/SMSD-AI/SMSD-AI.lvclass"/>
+			<Item Name="SMSD Master.lvclass" Type="LVClass" URL="../../../Network Protocol/SMSD Master/SMSD Master.lvclass"/>
+			<Item Name="SMSD.lvclass" Type="LVClass" URL="../../../Devices/SMSD/SMSD.lvclass"/>
+			<Item Name="SMSD Data Unit.lvclass" Type="LVClass" URL="../../../Data Unit/SMSD Data Unit/SMSD Data Unit.lvclass"/>
+			<Item Name="SMSD ADU.lvclass" Type="LVClass" URL="../../../Transmission Data Unit/SMSD/SMSD ADU.lvclass"/>
+			<Item Name="SMSD-DI.lvclass" Type="LVClass" URL="../../../Devices/SMSD/SMSD-DI/SMSD-DI.lvclass"/>
+			<Item Name="ICPCON ET-7017-10.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7017-10/ICPCON ET-7017-10.lvclass"/>
+			<Item Name="ET-7017-10 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7017-10/ET-7017-10 Data Model.lvclass"/>
+			<Item Name="ICPCON ET-7018i.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7018i/ICPCON ET-7018i.lvclass"/>
+			<Item Name="ET-7018i Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7018i/ET-7018i Data Model.lvclass"/>
+			<Item Name="ICPCON ET-7018.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7018/ICPCON ET-7018.lvclass"/>
+			<Item Name="ET-7018 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7018/ET-7018 Data Model.lvclass"/>
+			<Item Name="ICPCON ET-7024.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7024/ICPCON ET-7024.lvclass"/>
+			<Item Name="ET-7024 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7024/ET-7024 Data Model.lvclass"/>
+			<Item Name="ICPCON ET-7028.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7028/ICPCON ET-7028.lvclass"/>
+			<Item Name="ET-7028 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7028/ET-7028 Data Model.lvclass"/>
+			<Item Name="ICPCON ET-7042.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7042/ICPCON ET-7042.lvclass"/>
+			<Item Name="ET-7042 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7042/ET-7042 Data Model.lvclass"/>
+			<Item Name="ICPCON ET-7051.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7051/ICPCON ET-7051.lvclass"/>
+			<Item Name="ET-7051 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7051/ET-7051 Data Model.lvclass"/>
+			<Item Name="ICPCON PM-3112.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON PM-3112/ICPCON PM-3112.lvclass"/>
+			<Item Name="ICPCON PM3114 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON PM3114 Data Model/ICPCON PM3114 Data Model.lvclass"/>
+			<Item Name="ICPCON ET-7017.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7017/ICPCON ET-7017.lvclass"/>
+		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>

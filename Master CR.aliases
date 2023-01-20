@@ -1,2 +1,5 @@
 [My Computer]
 My Computer = "192.168.0.2"
+
+[Real Time Target]
+Real Time Target = "0.0.0.0"
