@@ -261,6 +261,7 @@ DirectoryIndex index.htm
 			<Item Name="ICPCON PM-3112.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON PM-3112/ICPCON PM-3112.lvclass"/>
 			<Item Name="ICPCON PM3114 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON PM3114 Data Model/ICPCON PM3114 Data Model.lvclass"/>
 			<Item Name="ICPCON ET-7017.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7017/ICPCON ET-7017.lvclass"/>
+			<Item Name="ICPCON PM-3112-RTU.lvclass" Type="LVClass" URL="../../../Devices/M7000/ICPCON PM-3112 RTU/ICPCON PM-3112-RTU.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

@@ -24,6 +24,7 @@
 				<Item Name="ET-7024 Data Model.lvclass" Type="LVClass" URL="../Data Model/ICPCON ET7000 Data Model/ET-7024/ET-7024 Data Model.lvclass"/>
 				<Item Name="ET-7028 Data Model.lvclass" Type="LVClass" URL="../Data Model/ICPCON ET7000 Data Model/ET-7028/ET-7028 Data Model.lvclass"/>
 				<Item Name="ET-7042 Data Model.lvclass" Type="LVClass" URL="../Data Model/ICPCON ET7000 Data Model/ET-7042/ET-7042 Data Model.lvclass"/>
+				<Item Name="ET-7042UR Data Model.lvclass" Type="LVClass" URL="../Data Model/ICPCON ET7000 Data Model/ET-7042UR/ET-7042UR Data Model.lvclass"/>
 				<Item Name="ET-7051 Data Model.lvclass" Type="LVClass" URL="../Data Model/ICPCON ET7000 Data Model/ET-7051/ET-7051 Data Model.lvclass"/>
 				<Item Name="TEST Data Model.lvclass" Type="LVClass" URL="../Data Model/ICPCON ET7000 Data Model/TEST/TEST Data Model.lvclass"/>
 			</Item>
@@ -78,6 +79,7 @@
 		</Item>
 		<Item Name="Master CR.lvclass" Type="LVClass" URL="../Master CR.lvclass"/>
 		<Item Name="Param.lvlib" Type="Library" URL="../Param/Param.lvlib"/>
+		<Item Name="Read Queue and DVR test.vi" Type="VI" URL="../test/Read Queue and DVR test.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
