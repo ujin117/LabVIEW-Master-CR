@@ -82,43 +82,7 @@ DirectoryIndex index.htm
 			<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 			<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 			<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-			<Item Name="Modbus Slave Write Time.vi" Type="VI" URL="../../CR test/Modbus Slave Write Time.vi"/>
-			<Item Name="Dependencies" Type="Dependencies">
-				<Item Name="vi.lib" Type="Folder">
-					<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
-					<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
-					<Item Name="VISA Flush IO Buffer Mask.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Flush IO Buffer Mask.ctl"/>
-				</Item>
-				<Item Name="API Main.lvlib" Type="Library" URL="../../../../Modbus_v121c/API/Wrapper/API Main.lvlib"/>
-				<Item Name="ASCII Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/ASCII/ASCII Data Unit.lvclass"/>
-				<Item Name="Bits to Bytes.vi" Type="VI" URL="../../../../Modbus_v121c/Utility/Bits to Bytes.vi"/>
-				<Item Name="Bytes to Bits.vi" Type="VI" URL="../../../../Modbus_v121c/Utility/Bytes to Bits.vi"/>
-				<Item Name="Bytes to U16s.vi" Type="VI" URL="../../../../Modbus_v121c/Utility/Bytes to U16s.vi"/>
-				<Item Name="Device Data Model.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Data Model/Device Data Model.lvclass"/>
-				<Item Name="ELAN Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ELAN Data Model/ELAN Data Model.lvclass"/>
-				<Item Name="ELAN PDU.lvclass" Type="LVClass" URL="../../../Data Unit/ELAN PC Data Unit/ELAN PDU.lvclass"/>
-				<Item Name="Generate UUID.vi" Type="VI" URL="../../../../Modbus_v121c/Utility/Generate UUID.vi"/>
-				<Item Name="IP Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/IP/IP Data Unit.lvclass"/>
-				<Item Name="Master Function Definition.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Master Function Definition/Master Function Definition.lvclass"/>
-				<Item Name="Modbus API.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/API/Modbus API.lvclass"/>
-				<Item Name="Modbus Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Modbus Data Unit/Modbus Data Unit.lvclass"/>
-				<Item Name="Modbus Master.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/API/Master/Modbus Master.lvclass"/>
-				<Item Name="Modbus Slave.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/API/Slave/Modbus Slave.lvclass"/>
-				<Item Name="Network Master.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Master/Network Master.lvclass"/>
-				<Item Name="Network Protocol.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Protocol.lvclass"/>
-				<Item Name="Network Slave.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Slave/Network Slave.lvclass"/>
-				<Item Name="RTU Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/RTU/RTU Data Unit.lvclass"/>
-				<Item Name="Serial Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/Serial Interface/Serial Data Unit.lvclass"/>
-				<Item Name="Serial Master.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Master/Serial/Serial Master.lvclass"/>
-				<Item Name="Serial Shared Components.lvlib" Type="Library" URL="../../../../Modbus_v121c/Network Interface/Serial Interface/Serial Shared Components/Serial Shared Components.lvlib"/>
-				<Item Name="Serial Slave.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Slave/Serial/Serial Slave.lvclass"/>
-				<Item Name="Standard Data Model.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Data Model/Standard Data Model/Standard Data Model.lvclass"/>
-				<Item Name="TCP Master.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Master/TCP/TCP Master.lvclass"/>
-				<Item Name="TCP Shared Components.lvlib" Type="Library" URL="../../../../Modbus_v121c/Network Interface/TCP Interface/TCP Shared Components/TCP Shared Components.lvlib"/>
-				<Item Name="TCP Slave.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Slave/TCP/TCP Slave.lvclass"/>
-				<Item Name="Transmission Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/Transmission Data Unit.lvclass"/>
-				<Item Name="U16s to Bytes.vi" Type="VI" URL="../../../../Modbus_v121c/Utility/U16s to Bytes.vi"/>
-			</Item>
+			<Item Name="Dependencies" Type="Dependencies"/>
 			<Item Name="Build Specifications" Type="Build"/>
 		</Item>
 	</Item>
@@ -138,7 +102,7 @@ DirectoryIndex index.htm
 		<Property Name="server.viscripting.showScriptingOperationsInContextHelp" Type="Bool">false</Property>
 		<Property Name="server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Param_MB test.lvlib" Type="Library" URL="../enums/Param_MB test.lvlib"/>
+		<Item Name="Param_MB test.lvlib" Type="Library" URL="../../PM3112/enums/Param_MB test.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -229,7 +193,7 @@ DirectoryIndex index.htm
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="CR test.vi" Type="VI" URL="../CR test.vi"/>
+		<Item Name="CR test.vi" Type="VI" URL="../../PM3112/CR test.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -241,7 +205,7 @@ DirectoryIndex index.htm
 			<Item Name="ELAN PDU.lvclass" Type="LVClass" URL="../../../Data Unit/ELAN PC Data Unit/ELAN PDU.lvclass"/>
 			<Item Name="Device Data Model.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Data Model/Device Data Model.lvclass"/>
 			<Item Name="Modbus Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Modbus Data Unit/Modbus Data Unit.lvclass"/>
-			<Item Name="Param_MB test.lvlib" Type="Library" URL="../enums/Param_MB test.lvlib"/>
+			<Item Name="Param_MB test.lvlib" Type="Library" URL="../../PM3112/enums/Param_MB test.lvlib"/>
 			<Item Name="Master CR.lvclass" Type="LVClass" URL="../../../Master CR.lvclass"/>
 			<Item Name="Param.lvlib" Type="Library" URL="../../../Param/Param.lvlib"/>
 			<Item Name="Network Protocol.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Protocol.lvclass"/>

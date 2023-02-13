@@ -10,4 +10,9 @@
 # Metadata
 *.aliases
 *.lvlps
+
+# Datasheets
+*.pdf
+
+
 Changes.txt

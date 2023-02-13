@@ -48,6 +48,7 @@
 					<Item Name="ICPCON ET-7024.lvclass" Type="LVClass" URL="../Devices/ET7000/ICPCON ET-7024/ICPCON ET-7024.lvclass"/>
 					<Item Name="ICPCON ET-7028.lvclass" Type="LVClass" URL="../Devices/ET7000/ICPCON ET-7028/ICPCON ET-7028.lvclass"/>
 					<Item Name="ICPCON ET-7042.lvclass" Type="LVClass" URL="../Devices/ET7000/ICPCON ET-7042/ICPCON ET-7042.lvclass"/>
+					<Item Name="ICPCON ET-7042UR.lvclass" Type="LVClass" URL="../Devices/ET7000/ICPCON ET-7042UR/ICPCON ET-7042UR.lvclass"/>
 					<Item Name="ICPCON ET-7051.lvclass" Type="LVClass" URL="../Devices/ET7000/ICPCON ET-7051/ICPCON ET-7051.lvclass"/>
 					<Item Name="ICPCON PM-3112.lvclass" Type="LVClass" URL="../Devices/ET7000/ICPCON PM-3112/ICPCON PM-3112.lvclass"/>
 					<Item Name="TEST.lvclass" Type="LVClass" URL="../Devices/ET7000/TEST/TEST.lvclass"/>
