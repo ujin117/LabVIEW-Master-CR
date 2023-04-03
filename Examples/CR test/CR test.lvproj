@@ -85,6 +85,211 @@ DirectoryIndex index.htm
 			<Item Name="Dependencies" Type="Dependencies"/>
 			<Item Name="Build Specifications" Type="Build"/>
 		</Item>
+		<Item Name="OrangePi" Type="Raspberry Pi 2 B">
+			<Property Name="alias.name" Type="Str">OrangePi</Property>
+			<Property Name="alias.value" Type="Str">192.168.36.72</Property>
+			<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,ARM;LINX_DEVICE,True;LINX_DEVICE_FAMILY,4;LINX_DEVICE_ID,3;</Property>
+			<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
+			<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
+			<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
+			<Property Name="host.TargetCPUID" Type="UInt">8</Property>
+			<Property Name="host.TargetOSID" Type="UInt">8</Property>
+			<Property Name="target.cleanupVisa" Type="Bool">false</Property>
+			<Property Name="target.FPProtocolGlobals_ControlTimeLimit" Type="Int">300</Property>
+			<Property Name="target.getDefault-&gt;WebServer.Port" Type="Int">80</Property>
+			<Property Name="target.getDefault-&gt;WebServer.Timeout" Type="Int">60</Property>
+			<Property Name="target.IOScan.Faults" Type="Str"></Property>
+			<Property Name="target.IOScan.NetVarPeriod" Type="UInt">100</Property>
+			<Property Name="target.IOScan.NetWatchdogEnabled" Type="Bool">false</Property>
+			<Property Name="target.IOScan.Period" Type="UInt">10000</Property>
+			<Property Name="target.IOScan.PowerupMode" Type="UInt">0</Property>
+			<Property Name="target.IOScan.Priority" Type="UInt">0</Property>
+			<Property Name="target.IOScan.ReportModeConflict" Type="Bool">true</Property>
+			<Property Name="target.IsRemotePanelSupported" Type="Bool">true</Property>
+			<Property Name="target.RTCPULoadMonitoringEnabled" Type="Bool">true</Property>
+			<Property Name="target.RTDebugWebServerHTTPPort" Type="Int">8001</Property>
+			<Property Name="target.RTTarget.ApplicationPath" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
+			<Property Name="target.RTTarget.EnableFileSharing" Type="Bool">true</Property>
+			<Property Name="target.RTTarget.IPAccess" Type="Str">+*</Property>
+			<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">true</Property>
+			<Property Name="target.RTTarget.VIPath" Type="Path">/home/lvuser/natinst/bin</Property>
+			<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
+			<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
+			<Property Name="target.server.tcp.access" Type="Str">+*</Property>
+			<Property Name="target.server.tcp.enabled" Type="Bool">false</Property>
+			<Property Name="target.server.tcp.paranoid" Type="Bool">true</Property>
+			<Property Name="target.server.tcp.port" Type="Int">3363</Property>
+			<Property Name="target.server.tcp.serviceName" Type="Str">Main Application Instance/VI Server</Property>
+			<Property Name="target.server.tcp.serviceName.default" Type="Str">Main Application Instance/VI Server</Property>
+			<Property Name="target.server.vi.access" Type="Str">+*</Property>
+			<Property Name="target.server.vi.callsEnabled" Type="Bool">true</Property>
+			<Property Name="target.server.vi.propertiesEnabled" Type="Bool">true</Property>
+			<Property Name="target.WebServer.Config" Type="Str">Listen 8000
+
+NI.ServerName default
+DocumentRoot "$LVSERVER_DOCROOT"
+TypesConfig "$LVSERVER_CONFIGROOT/mime.types"
+DirectoryIndex index.htm
+WorkerLimit 10
+InactivityTimeout 60
+
+LoadModulePath "$LVSERVER_MODULEPATHS"
+LoadModule LVAuth lvauthmodule
+LoadModule LVRFP lvrfpmodule
+
+#
+# Pipeline Definition
+#
+
+SetConnector netConnector
+
+AddHandler LVAuth
+AddHandler LVRFP
+
+AddHandler fileHandler ""
+
+AddOutputFilter chunkFilter
+
+
+</Property>
+			<Property Name="target.WebServer.Enabled" Type="Bool">false</Property>
+			<Property Name="target.WebServer.LogEnabled" Type="Bool">false</Property>
+			<Property Name="target.WebServer.LogPath" Type="Path">/c/ni-rt/system/www/www.log</Property>
+			<Property Name="target.WebServer.Port" Type="Int">80</Property>
+			<Property Name="target.WebServer.RootPath" Type="Path">/c/ni-rt/system/www</Property>
+			<Property Name="target.WebServer.TcpAccess" Type="Str">c+*</Property>
+			<Property Name="target.WebServer.Timeout" Type="Int">60</Property>
+			<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
+			<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
+			<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
+			<Item Name="Relay test.vi" Type="VI" URL="../../PM3112/Relay test.vi"/>
+			<Item Name="Dependencies" Type="Dependencies">
+				<Item Name="vi.lib" Type="Folder">
+					<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
+					<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
+					<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
+					<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+					<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
+					<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+					<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
+					<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
+					<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
+					<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+					<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
+					<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
+					<Item Name="VISA Flush IO Buffer Mask.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Flush IO Buffer Mask.ctl"/>
+					<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				</Item>
+				<Item Name="ASCII Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/ASCII/ASCII Data Unit.lvclass"/>
+				<Item Name="Bits to Bytes.vi" Type="VI" URL="../../../../Modbus_v121c/Utility/Bits to Bytes.vi"/>
+				<Item Name="Bytes to Bits.vi" Type="VI" URL="../../../../Modbus_v121c/Utility/Bytes to Bits.vi"/>
+				<Item Name="Bytes to U16s.vi" Type="VI" URL="../../../../Modbus_v121c/Utility/Bytes to U16s.vi"/>
+				<Item Name="Device Data Model.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Data Model/Device Data Model.lvclass"/>
+				<Item Name="ELAN Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ELAN Data Model/ELAN Data Model.lvclass"/>
+				<Item Name="ELAN Data Unit.lvclass" Type="LVClass" URL="../../../Transmission Data Unit/ELAN/ELAN Data Unit.lvclass"/>
+				<Item Name="ELAN Master.lvclass" Type="LVClass" URL="../../../Network Protocol/ELAN Master/ELAN Master.lvclass"/>
+				<Item Name="ELAN PDU.lvclass" Type="LVClass" URL="../../../Data Unit/ELAN PC Data Unit/ELAN PDU.lvclass"/>
+				<Item Name="ELAN.lvclass" Type="LVClass" URL="../../../Devices/Serial/ELAN/ELAN.lvclass"/>
+				<Item Name="ET-7016i Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7016i/ET-7016i Data Model.lvclass"/>
+				<Item Name="ET-7017-10 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7017-10/ET-7017-10 Data Model.lvclass"/>
+				<Item Name="ET-7018 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7018/ET-7018 Data Model.lvclass"/>
+				<Item Name="ET-7018i Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7018i/ET-7018i Data Model.lvclass"/>
+				<Item Name="ET-7024 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7024/ET-7024 Data Model.lvclass"/>
+				<Item Name="ET-7028 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7028/ET-7028 Data Model.lvclass"/>
+				<Item Name="ET-7042 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7042/ET-7042 Data Model.lvclass"/>
+				<Item Name="ET-7042UR Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7042UR/ET-7042UR Data Model.lvclass"/>
+				<Item Name="ET-7051 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ET-7051/ET-7051 Data Model.lvclass"/>
+				<Item Name="ICPCON ET Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/ICPCON ET Data Model.lvclass"/>
+				<Item Name="ICPCON ET-7016i.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7016i/ICPCON ET-7016i.lvclass"/>
+				<Item Name="ICPCON ET-7017-10.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7017-10/ICPCON ET-7017-10.lvclass"/>
+				<Item Name="ICPCON ET-7017.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7017/ICPCON ET-7017.lvclass"/>
+				<Item Name="ICPCON ET-7018.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7018/ICPCON ET-7018.lvclass"/>
+				<Item Name="ICPCON ET-7018i.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7018i/ICPCON ET-7018i.lvclass"/>
+				<Item Name="ICPCON ET-7024.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7024/ICPCON ET-7024.lvclass"/>
+				<Item Name="ICPCON ET-7028.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7028/ICPCON ET-7028.lvclass"/>
+				<Item Name="ICPCON ET-7042.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7042/ICPCON ET-7042.lvclass"/>
+				<Item Name="ICPCON ET-7042UR.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7042UR/ICPCON ET-7042UR.lvclass"/>
+				<Item Name="ICPCON ET-7051.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON ET-7051/ICPCON ET-7051.lvclass"/>
+				<Item Name="ICPCON M-7024.lvclass" Type="LVClass" URL="../../../Devices/M7000/ICPCON M-7024/ICPCON M-7024.lvclass"/>
+				<Item Name="ICPCON PM-3112-RTU.lvclass" Type="LVClass" URL="../../../Devices/M7000/ICPCON PM-3112 RTU/ICPCON PM-3112-RTU.lvclass"/>
+				<Item Name="ICPCON PM-3112.lvclass" Type="LVClass" URL="../../../Devices/ET7000/ICPCON PM-3112/ICPCON PM-3112.lvclass"/>
+				<Item Name="ICPCON PM3114 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON PM3114 Data Model/ICPCON PM3114 Data Model.lvclass"/>
+				<Item Name="IP Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/IP/IP Data Unit.lvclass"/>
+				<Item Name="M-7024 Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/M-7024/M-7024 Data Model.lvclass"/>
+				<Item Name="Master CR.lvclass" Type="LVClass" URL="../../../Master CR.lvclass"/>
+				<Item Name="Master Function Definition.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Master Function Definition/Master Function Definition.lvclass"/>
+				<Item Name="Modbus Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Modbus Data Unit/Modbus Data Unit.lvclass"/>
+				<Item Name="Modbus Serial.lvclass" Type="LVClass" URL="../../../Devices/Serial/Modbus Serial/Modbus Serial.lvclass"/>
+				<Item Name="Network Master.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Master/Network Master.lvclass"/>
+				<Item Name="Network Protocol.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Protocol.lvclass"/>
+				<Item Name="Param.lvlib" Type="Library" URL="../../../Param/Param.lvlib"/>
+				<Item Name="Param_MB test.lvlib" Type="Library" URL="../../PM3112/enums/Param_MB test.lvlib"/>
+				<Item Name="RTU Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/RTU/RTU Data Unit.lvclass"/>
+				<Item Name="Serial Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/Serial Interface/Serial Data Unit.lvclass"/>
+				<Item Name="Serial Master.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Master/Serial/Serial Master.lvclass"/>
+				<Item Name="Serial Shared Components.lvlib" Type="Library" URL="../../../../Modbus_v121c/Network Interface/Serial Interface/Serial Shared Components/Serial Shared Components.lvlib"/>
+				<Item Name="Serial.lvclass" Type="LVClass" URL="../../../Devices/Serial/Serial.lvclass"/>
+				<Item Name="SMSD ADU.lvclass" Type="LVClass" URL="../../../Transmission Data Unit/SMSD/SMSD ADU.lvclass"/>
+				<Item Name="SMSD Data Unit.lvclass" Type="LVClass" URL="../../../Data Unit/SMSD Data Unit/SMSD Data Unit.lvclass"/>
+				<Item Name="SMSD Master.lvclass" Type="LVClass" URL="../../../Network Protocol/SMSD Master/SMSD Master.lvclass"/>
+				<Item Name="SMSD-AI.lvclass" Type="LVClass" URL="../../../Devices/SMSD/SMSD-AI/SMSD-AI.lvclass"/>
+				<Item Name="SMSD-DI.lvclass" Type="LVClass" URL="../../../Devices/SMSD/SMSD-DI/SMSD-DI.lvclass"/>
+				<Item Name="SMSD.lvclass" Type="LVClass" URL="../../../Devices/SMSD/SMSD.lvclass"/>
+				<Item Name="TCP Master.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Network Protocol/Network Master/TCP/TCP Master.lvclass"/>
+				<Item Name="TCP Shared Components.lvlib" Type="Library" URL="../../../../Modbus_v121c/Network Interface/TCP Interface/TCP Shared Components/TCP Shared Components.lvlib"/>
+				<Item Name="TCP.lvclass" Type="LVClass" URL="../../../Devices/ET7000/TCP/TCP.lvclass"/>
+				<Item Name="TEST Data Model.lvclass" Type="LVClass" URL="../../../Data Model/ICPCON ET7000 Data Model/TEST/TEST Data Model.lvclass"/>
+				<Item Name="TEST.lvclass" Type="LVClass" URL="../../../Devices/ET7000/TEST/TEST.lvclass"/>
+				<Item Name="TEST1.lvclass" Type="LVClass" URL="../../../Devices/ET7000/TEST1/TEST1.lvclass"/>
+				<Item Name="Transmission Data Unit.lvclass" Type="LVClass" URL="../../../../Modbus_v121c/Transmission Data Unit/Transmission Data Unit.lvclass"/>
+				<Item Name="U16s to Bytes.vi" Type="VI" URL="../../../../Modbus_v121c/Utility/U16s to Bytes.vi"/>
+			</Item>
+			<Item Name="Build Specifications" Type="Build">
+				<Item Name="RelayTest" Type="{117D6E82-86E4-4435-99C8-B638EE47B29E}">
+					<Property Name="App_INI_aliasGUID" Type="Str">{A43C29A8-AB10-4879-9CDE-FA21871CC05E}</Property>
+					<Property Name="App_INI_GUID" Type="Str">{F1444513-20E8-429B-8D35-565D91B1017C}</Property>
+					<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+					<Property Name="App_serverType" Type="Int">0</Property>
+					<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+					<Property Name="Bld_buildCacheID" Type="Str">{F7D83EE7-6008-440C-932F-4FC4845F65D8}</Property>
+					<Property Name="Bld_buildSpecName" Type="Str">RelayTest</Property>
+					<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+					<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+					<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+					<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/RelayTest</Property>
+					<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+					<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+					<Property Name="Bld_previewCacheID" Type="Str">{8763F984-243E-47F2-BB09-71D99B6E4A45}</Property>
+					<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
+					<Property Name="Bld_version.build" Type="Int">5</Property>
+					<Property Name="Bld_version.major" Type="Int">1</Property>
+					<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
+					<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
+					<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+					<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+					<Property Name="Destination[0].type" Type="Str">App</Property>
+					<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+					<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
+					<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+					<Property Name="DestinationCount" Type="Int">2</Property>
+					<Property Name="Source[0].itemID" Type="Str">{5AE21D9E-FFCC-4E59-A626-9637EB9B08CF}</Property>
+					<Property Name="Source[0].type" Type="Str">Container</Property>
+					<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+					<Property Name="Source[1].itemID" Type="Ref">/Test/OrangePi/Relay test.vi</Property>
+					<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+					<Property Name="Source[1].type" Type="Str">VI</Property>
+					<Property Name="SourceCount" Type="Int">2</Property>
+					<Property Name="TgtF_companyName" Type="Str">ООО "Плазмохимические технологии"</Property>
+					<Property Name="TgtF_fileDescription" Type="Str">RelayTest</Property>
+					<Property Name="TgtF_internalName" Type="Str">RelayTest</Property>
+					<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2023 ООО "Плазмохимические технологии"</Property>
+					<Property Name="TgtF_productName" Type="Str">RelayTest</Property>
+					<Property Name="TgtF_targetfileGUID" Type="Str">{0F7F012C-228A-4DCA-ACAA-6F36B2898FCA}</Property>
+					<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
+					<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+				</Item>
+			</Item>
+		</Item>
 	</Item>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="CCSymbols" Type="Str">SERVER,OPC;</Property>
