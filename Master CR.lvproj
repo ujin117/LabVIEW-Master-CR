@@ -22,11 +22,13 @@
 				<Item Name="ET-7018 Data Model.lvclass" Type="LVClass" URL="../Data Model/ICPCON ET7000 Data Model/ET-7018/ET-7018 Data Model.lvclass"/>
 				<Item Name="ET-7018i Data Model.lvclass" Type="LVClass" URL="../Data Model/ICPCON ET7000 Data Model/ET-7018i/ET-7018i Data Model.lvclass"/>
 				<Item Name="ET-7024 Data Model.lvclass" Type="LVClass" URL="../Data Model/ICPCON ET7000 Data Model/ET-7024/ET-7024 Data Model.lvclass"/>
+				<Item Name="ET-7024AO Data Model.lvclass" Type="LVClass" URL="../Data Model/ICPCON ET7000 Data Model/ET-7024AO/ET-7024AO Data Model.lvclass"/>
 				<Item Name="ET-7028 Data Model.lvclass" Type="LVClass" URL="../Data Model/ICPCON ET7000 Data Model/ET-7028/ET-7028 Data Model.lvclass"/>
 				<Item Name="ET-7042 Data Model.lvclass" Type="LVClass" URL="../Data Model/ICPCON ET7000 Data Model/ET-7042/ET-7042 Data Model.lvclass"/>
 				<Item Name="ET-7051 Data Model.lvclass" Type="LVClass" URL="../Data Model/ICPCON ET7000 Data Model/ET-7051/ET-7051 Data Model.lvclass"/>
 				<Item Name="TEST Data Model.lvclass" Type="LVClass" URL="../Data Model/ICPCON ET7000 Data Model/TEST/TEST Data Model.lvclass"/>
 			</Item>
+			<Item Name="SHD Data Model.lvclass" Type="LVClass" URL="../Data Model/SHD Data Model/SHD Data Model.lvclass"/>
 			<Item Name="ICPCON ET Data Model.lvclass" Type="LVClass" URL="../Data Model/ICPCON ET7000 Data Model/ICPCON ET Data Model.lvclass"/>
 			<Item Name="ICPCON PM3114 Data Model.lvclass" Type="LVClass" URL="../Data Model/ICPCON PM3114 Data Model/ICPCON PM3114 Data Model.lvclass"/>
 			<Item Name="ELAN Data Model.lvclass" Type="LVClass" URL="../Data Model/ELAN Data Model/ELAN Data Model.lvclass"/>
@@ -38,6 +40,7 @@
 		<Item Name="Master CR" Type="Folder">
 			<Item Name="ET7000" Type="Folder">
 				<Item Name="TCP" Type="Folder">
+					<Item Name="SHINI SHD.lvclass" Type="LVClass" URL="../Devices/SHINI/SHD/SHINI SHD.lvclass"/>
 					<Item Name="TCP.lvclass" Type="LVClass" URL="../Devices/ET7000/TCP/TCP.lvclass"/>
 					<Item Name="ICPCON ET-7016i.lvclass" Type="LVClass" URL="../Devices/ET7000/ICPCON ET-7016i/ICPCON ET-7016i.lvclass"/>
 					<Item Name="ICPCON ET-7017.lvclass" Type="LVClass" URL="../Devices/ET7000/ICPCON ET-7017/ICPCON ET-7017.lvclass"/>
@@ -45,6 +48,7 @@
 					<Item Name="ICPCON ET-7018i.lvclass" Type="LVClass" URL="../Devices/ET7000/ICPCON ET-7018i/ICPCON ET-7018i.lvclass"/>
 					<Item Name="ICPCON ET-7018.lvclass" Type="LVClass" URL="../Devices/ET7000/ICPCON ET-7018/ICPCON ET-7018.lvclass"/>
 					<Item Name="ICPCON ET-7024.lvclass" Type="LVClass" URL="../Devices/ET7000/ICPCON ET-7024/ICPCON ET-7024.lvclass"/>
+					<Item Name="ICPCON ET-7024AO.lvclass" Type="LVClass" URL="../Devices/ET7000/ICPCON ET-7024AO/ICPCON ET-7024AO.lvclass"/>
 					<Item Name="ICPCON ET-7028.lvclass" Type="LVClass" URL="../Devices/ET7000/ICPCON ET-7028/ICPCON ET-7028.lvclass"/>
 					<Item Name="ICPCON ET-7042.lvclass" Type="LVClass" URL="../Devices/ET7000/ICPCON ET-7042/ICPCON ET-7042.lvclass"/>
 					<Item Name="ICPCON ET-7051.lvclass" Type="LVClass" URL="../Devices/ET7000/ICPCON ET-7051/ICPCON ET-7051.lvclass"/>
@@ -96,14 +100,14 @@
 			<Item Name="Network Master.lvclass" Type="LVClass" URL="../../Modbus_v121c/Network Protocol/Network Master/Network Master.lvclass"/>
 			<Item Name="Network Protocol.lvclass" Type="LVClass" URL="../../Modbus_v121c/Network Protocol/Network Protocol.lvclass"/>
 			<Item Name="Serial Master.lvclass" Type="LVClass" URL="../../Modbus_v121c/Network Protocol/Network Master/Serial/Serial Master.lvclass"/>
-			<Item Name="Serial Shared Components.lvlib" Type="Library" URL="../../Modbus_v121c/Network Interface/Serial Interface/Serial Shared Components/Serial Shared Components.lvlib"/>
 			<Item Name="TCP Master.lvclass" Type="LVClass" URL="../../Modbus_v121c/Network Protocol/Network Master/TCP/TCP Master.lvclass"/>
-			<Item Name="TCP Shared Components.lvlib" Type="Library" URL="../../Modbus_v121c/Network Interface/TCP Interface/TCP Shared Components/TCP Shared Components.lvlib"/>
 			<Item Name="Transmission Data Unit.lvclass" Type="LVClass" URL="../../Modbus_v121c/Transmission Data Unit/Transmission Data Unit.lvclass"/>
 			<Item Name="U16s to Bytes.vi" Type="VI" URL="../../Modbus_v121c/Utility/U16s to Bytes.vi"/>
 			<Item Name="RTU Data Unit.lvclass" Type="LVClass" URL="../../Modbus_v121c/Transmission Data Unit/RTU/RTU Data Unit.lvclass"/>
 			<Item Name="Serial Data Unit.lvclass" Type="LVClass" URL="../../Modbus_v121c/Transmission Data Unit/Serial Interface/Serial Data Unit.lvclass"/>
 			<Item Name="ASCII Data Unit.lvclass" Type="LVClass" URL="../../Modbus_v121c/Transmission Data Unit/ASCII/ASCII Data Unit.lvclass"/>
+			<Item Name="Serial Shared Components.lvlib" Type="Library" URL="../../Modbus_v121c/Network Interface/Serial Interface/SSC/Serial Shared Components.lvlib"/>
+			<Item Name="TCP Shared Components.lvlib" Type="Library" URL="../../Modbus_v121c/Network Interface/TCP Interface/TSC/TCP Shared Components.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -204,7 +208,7 @@ AddOutputFilter chunkFilter
 			<Item Name="ELAN PDU.lvclass" Type="LVClass" URL="../Data Unit/ELAN PC Data Unit/ELAN PDU.lvclass"/>
 			<Item Name="Modbus Data Unit.lvclass" Type="LVClass" URL="../../Modbus_v121c/Modbus Data Unit/Modbus Data Unit.lvclass"/>
 			<Item Name="Network Protocol.lvclass" Type="LVClass" URL="../../Modbus_v121c/Network Protocol/Network Protocol.lvclass"/>
-			<Item Name="Serial Shared Components.lvlib" Type="Library" URL="../../Modbus_v121c/Network Interface/Serial Interface/Serial Shared Components/Serial Shared Components.lvlib"/>
+			<Item Name="Serial Shared Components.lvlib" Type="Library" URL="../../Modbus_v121c/Network Interface/Serial Interface/SSC/Serial Shared Components.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
